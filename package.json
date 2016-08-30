@@ -1,0 +1,26 @@
+{
+  "name": "config-json-loader",
+  "version": "0.1.0",
+  "description": "*.config.json files loader module for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --tap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polesskiy-dev/config-json-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "json",
+    "simple",
+    "json",
+    "loader"
+  ],
+  "author": "polisskyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polesskiy-dev/config-json-loader/issues"
+  },
+  "homepage": "https://github.com/polesskiy-dev/config-json-loader#readme"
+}
