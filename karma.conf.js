@@ -1,6 +1,6 @@
 module.exports = function (config) {
     config.set({
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
 
         files: [
             //{pattern: 'test-context.js'}
@@ -9,18 +9,30 @@ module.exports = function (config) {
 
         frameworks: ['jasmine'],
 
+        reporters: ['mocha'],
+
         preprocessors: {
             //'test-context.js': ['webpack']
             'source/*.spec.js': ['webpack']
         },
+        plugins: [
+            'karma-jasmine', 'karma-mocha',
+            'karma-chai',
+            'karma-webpack', 'karma-phantomjs-launcher',
+            'karma-mocha-reporter'
+        ],
 
-        webpack: {
+        webpack: //webpackConfig
+        {
             module: {
                 loaders: [
-                    {test: /\.js/, exclude: /node_modules/, loader: 'babel-loader'}
+                    {
+                        test: /\.js/,
+                        exclude: (/node_modules/),
+                        loader: 'babel-loader'
+                    }
                 ]
-            },
-            watch: true
+            }
         }
     });
 };

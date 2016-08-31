@@ -22,13 +22,23 @@
   },
   "homepage": "https://github.com/polesskiy-dev/config-json-loader#readme",
   "devDependencies": {
-    "babel-loader": "^5.0.0",
-    "webpack": "^1.8.4",
-    "jasmine-core": "^2.2.0",
-    "karma": "^0.13.2",
-    "karma-jasmine": "^0.3.5",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^5.4.2",
+    "babel-preset-latest": "^6.14.0",
+    "chai": "^3.5.0",
     "jasmine": "^2.2.1",
-    "karma-chrome-launcher": "^0.1.4",
-    "karma-webpack": "^1.6.0"
-  }
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^0.3.8",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-webpack": "^1.6.0",
+    "mocha": "^3.0.2",
+    "phantomjs-prebuilt": "^2.1.12",
+    "webpack": "^1.8.4"
+  },
+  "dependencies": {}
 }
